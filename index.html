@@ -1,1 +1,80 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moje Online Kino</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #e50914; /* Netflix červená */
+            margin-bottom: 30px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .card {
+            background-color: #1e1e1e;
+            border-radius: 8px;
+            overflow: hidden;
+            text-align: center;
+            padding: 15px;
+            transition: transform 0.2s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card h3 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .card a {
+            display: inline-block;
+            background-color: #e50914;
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 4px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .card a:hover {
+            background-color: #b20710;
+        }
+    </style>
+</head>
+<body>
 
+    <h1>🎬 Moje Online Kino</h1>
+
+    <div class="grid">
+        <!-- Film 1: Spider-Man -->
+        <div class="card">
+            <h3>Spider-Man</h3>
+            <p>Akční / Sci-Fi</p>
+            <!-- Odkaz vede na váš soubor Filmy.html, který už máte vytvořený -->
+            <a href="Filmy.html">Přehrát</a>
+        </div>
+
+        <!-- Zde si můžete jednoduše zkopírovat další kartu pro další film/seriál -->
+        <div class="card">
+            <h3>Další Film / Seriál</h3>
+            <p>Žánr</p>
+            <a href="#">Přehrát</a>
+        </div>
+    </div>
+
+</body>
+</html>
